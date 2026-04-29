@@ -18,8 +18,8 @@ notebook/catboost_info/
 # ── Trained models (rf_model too large for GitHub — regenerate from notebook) ──
 models/rf_model_improved.pkl
 
-# ── Data (keep out of version control if large/sensitive) ────
-data/*.csv
+# ── Data ─────────────────────────────────────────────────────
+# data/*.csv  ← uncommented: dataset needed on Streamlit Cloud
 
 # ── macOS ─────────────────────────────────────────────────────
 .DS_Store

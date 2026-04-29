@@ -1,0 +1,30 @@
+# ── Environment ───────────────────────────────────────────────
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebook/X_train.csv
+notebook/X_test.csv
+notebook/y_train.csv
+notebook/y_test.csv
+notebook/catboost_info/
+
+# ── Trained models (large binaries — regenerate by running notebook) ──
+models/*.pkl
+models/*.cbm
+
+# ── Data (keep out of version control if large/sensitive) ────
+data/*.csv
+
+# ── macOS ─────────────────────────────────────────────────────
+.DS_Store
+
+# ── IDEs ──────────────────────────────────────────────────────
+.vscode/
+.idea/

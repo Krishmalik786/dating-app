@@ -8,9 +8,13 @@ from groq import Groq
 from dotenv import load_dotenv
 
 load_dotenv()
-api_key = os.getenv("GROQ_API_KEY")
+
+# Support both Streamlit Cloud secrets and local .env
+api_key = st.secrets.get("GROQ_API_KEY", None) if hasattr(st, "secrets") else None
 if not api_key:
-    st.error("❌ GROQ_API_KEY not found. Please set it in your .env file.")
+    api_key = os.getenv("GROQ_API_KEY")
+if not api_key:
+    st.error("❌ GROQ_API_KEY not found. Add it to Streamlit Cloud secrets or your local .env file.")
     st.stop()
 client = Groq(api_key=api_key)
 

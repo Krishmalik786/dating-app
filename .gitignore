@@ -15,9 +15,8 @@ notebook/y_train.csv
 notebook/y_test.csv
 notebook/catboost_info/
 
-# ── Trained models (large binaries — regenerate by running notebook) ──
-models/*.pkl
-models/*.cbm
+# ── Trained models (rf_model too large for GitHub — regenerate from notebook) ──
+models/rf_model_improved.pkl
 
 # ── Data (keep out of version control if large/sensitive) ────
 data/*.csv

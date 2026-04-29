@@ -8,3 +8,5 @@ xgboost
 lightgbm
 catboost
 streamlit
+groq
+python-dotenv
